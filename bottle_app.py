@@ -24,6 +24,7 @@ def htmlify(title,text):
     return page
 
 def index():
+    blah()
     return htmlify("My lovely website",
                    "This is going to be an awesome website, when it is finished.")
 
