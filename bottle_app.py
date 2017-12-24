@@ -7,6 +7,8 @@
 
 from bottle import route, run, default_app, debug
 
+print "hello bottle"
+
 def htmlify(title,text):
     page = """
         <!doctype html>
@@ -24,7 +26,7 @@ def htmlify(title,text):
     return page
 
 def index():
-    blah()
+    #blah()
     return htmlify("My lovely website",
                    "This is going to be an awesome website, when it is finished.")
 
