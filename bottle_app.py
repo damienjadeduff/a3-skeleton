@@ -6,8 +6,8 @@
 #####################################################################
 
 from bottle import route, run, default_app, debug
+import sys
 
-print "hello bottle"
 
 def htmlify(title,text):
     page = """
@@ -28,7 +28,7 @@ def htmlify(title,text):
 def index():
     #blah()
     return htmlify("My lovely website",
-                   "This is going to be an awesome website, when it is finished.")
+                   "This is going to be an awesome website, when it is finished - Python version:"+str(sys.version_info))
 
 route('/', 'GET', index)
 
