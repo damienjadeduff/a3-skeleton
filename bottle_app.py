@@ -7,9 +7,6 @@
 
 from bottle import route, run, default_app, debug
 import sys
-----
-
-**
 
 
 def htmlify(title,text):
@@ -30,6 +27,7 @@ def htmlify(title,text):
 
 def index():
     #blah()
+    print("A request was made for my lovely website")
     return htmlify("My lovely website",
                    "This is going to be an awesome website, when it is finished - Python version:"+str(sys.version_info))
 
